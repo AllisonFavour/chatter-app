@@ -10,7 +10,7 @@ export default function Home() {
         <Navbar />
       </header>
       <main>
-        <div className="container my-20 mx-6 lg:mx-10 flex justify-between items-center flex-col sm:flex-row">
+        <div className="container my-20 px-6 lg:mx-10 flex justify-between items-center gap-20 flex-col sm:flex-row sm:items-center sm:justify-center">
           <div className="w-full">
             <h1 className="text-3xl font-bold sm:text-5xl md:text-6xl mb-10 text-black">
               Connect, Engage, and Grow with Chatter
@@ -21,26 +21,51 @@ export default function Home() {
               grow your online presence.
             </p>
             <div className="my-10">
-              <button className="bg-violet-600 text-white py-2 px-4">
+              <button className="bg-violet-600 text-white py-2 px-4 rounded-md">
                 Become a member
               </button>
-              <span className="mx-4">OR</span>
-              <button className="bg-violet-600 text-white py-2 px-4">
+              <span className="mx-6 text-violet-600 font-bold text-2xl">
+                OR
+              </span>
+              <button className="bg-violet-600 text-white py-2 px-4 rounded-md">
                 Log In
               </button>
             </div>
           </div>
 
-          <div className="">
-            <Image
-              src={journal_man}
-              alt="journaling man illustration"
-              width={500}
-            />
+          <div className="w-full mx-auto">
+            <Image src={journal_man} alt="journaling man illustration" />
           </div>
         </div>
       </main>
-      <section></section>
+
+      <section>
+        <div className="grid grid-cols-1 gap-4 gap-y-10 md:grid-cols-3 py-40 bg-black text-white">
+          <div className="text-center max-w-md mx-auto px-6">
+            <h3 className="text-3xl font-semibold mb-4">Powerful Blogging</h3>
+            <p>
+              Chatter provides a seamless blogging experience with intuitive
+              tools to help you create and publish engaging content.
+            </p>
+          </div>
+
+          <div className="text-center max-w-md mx-auto px-6">
+            <h3 className="text-3xl font-semibold mb-4">Community Building</h3>
+            <p>
+              Build a loyal following and foster meaningful connections with
+              your readers through Chatter&lsquo;s powerful community features.
+            </p>
+          </div>
+
+          <div className="text-center max-w-md mx-auto px-6">
+            <h3 className="text-3xl font-semibold mb-4">Insightful Analytics</h3>
+            <p>
+              Gain valuable insights into your content performance and audience
+              engagement with Chatter&lsquo;s comprehensive analytics tools.
+            </p>
+          </div>
+        </div>
+      </section>
       <Footer />
     </>
   );
