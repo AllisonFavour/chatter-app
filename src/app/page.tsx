@@ -12,10 +12,10 @@ export default function Home() {
       <main>
         <div className="container my-20 mx-6 lg:mx-10 flex justify-between items-center flex-col sm:flex-row">
           <div className="w-full">
-            <h1 className="text-3xl font-bold sm:text-5xl md:text-6xl mb-10">
+            <h1 className="text-3xl font-bold sm:text-5xl md:text-6xl mb-10 text-black">
               Connect, Engage, and Grow with Chatter
             </h1>
-            <p className="">
+            <p className="text-black">
               Chatter is the ultimate blogging platform that empowers you to
               share your thoughts, connect with like-minded individuals, and
               grow your online presence.
